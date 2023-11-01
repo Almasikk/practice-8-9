@@ -16,10 +16,14 @@ class AuthRepository {
       for (var user in data) {
         if (user['email'] == email && password == 'test') {
           return {
+            'id': user['id'] ?? '',
             'name': user['name'],
             'username': user['username'],
             'website': user['website'],
             'phone': user['phone'],
+            'street': user['address']['street'],
+            'suite': user['address']['suite'],
+            'city': user['address']['city']
           };
         }
       }

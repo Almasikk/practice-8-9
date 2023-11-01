@@ -7,18 +7,26 @@ import 'package:practice9/presentation/screens/profile_screen.dart';
 import 'package:practice9/presentation/screens/work_screen.dart';
 
 class BottomNavbar extends StatefulWidget {
+  final int id;
   final String name;
   final String username;
   final String phone;
   final String website;
+  final String street;
+  final String suite;
+  final String city;
 
-  const BottomNavbar(
-      {Key? key,
-      required this.name,
-      required this.username,
-      required this.phone,
-      required this.website})
-      : super(key: key);
+  const BottomNavbar({
+    Key? key,
+    required this.name,
+    required this.username,
+    required this.phone,
+    required this.website,
+    required this.id,
+    required this.street,
+    required this.suite,
+    required this.city,
+  }) : super(key: key);
 
   @override
   // ignore: library_private_types_in_public_api
@@ -54,7 +62,13 @@ class _BottomNavbarState extends State<BottomNavbar> {
         builder: (context, state) {
           if (state is LoadedNavigationState) {
             if (state.index == 0) {
-              return const HomePage();
+              return HomePage(
+                id: widget.id,
+                name: widget.name,
+                street: widget.street,
+                suite: widget.suite,
+                city: widget.city,
+              );
             } else if (state.index == 1) {
               return const WorkPage();
             } else if (state.index == 2) {

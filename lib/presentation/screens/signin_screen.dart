@@ -63,6 +63,10 @@ class SignInPage extends StatelessWidget {
                           username: userData['username'],
                           phone: userData['phone'],
                           website: userData['website'],
+                          id: userData['id'],
+                          street: userData['street'],
+                          suite: userData['suite'],
+                          city: userData['city'],
                         ),
                       ),
                     );
