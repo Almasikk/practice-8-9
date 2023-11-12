@@ -53,20 +53,20 @@ class SignInPage extends StatelessWidget {
             BlocBuilder<AuthBloc, AuthState>(
               builder: (context, state) {
                 if (state is LoadedState) {
-                  final userData = state.userData;
+                  final userData = state.users[0];
                   Future.microtask(() {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
                         builder: (context) => BottomNavbar(
-                          name: userData['name'],
-                          username: userData['username'],
-                          phone: userData['phone'],
-                          website: userData['website'],
-                          id: userData['id'],
-                          street: userData['street'],
-                          suite: userData['suite'],
-                          city: userData['city'],
+                          name: userData.name,
+                          username: userData.username,
+                          phone: userData.phone,
+                          website: userData.website,
+                          id: userData.id,
+                          street: userData.street,
+                          suite: userData.suite,
+                          city: userData.city,
                         ),
                       ),
                     );

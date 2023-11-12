@@ -4,7 +4,7 @@ import 'package:practice9/presentation/bloc/navigation_bloc/navigation_bloc.dart
 import 'package:practice9/presentation/screens/apps_screen.dart';
 import 'package:practice9/presentation/screens/home_screen.dart';
 import 'package:practice9/presentation/screens/profile_screen.dart';
-import 'package:practice9/presentation/screens/work_screen.dart';
+import 'package:practice9/presentation/screens/qr_screen.dart';
 
 class BottomNavbar extends StatefulWidget {
   final int id;
@@ -70,7 +70,7 @@ class _BottomNavbarState extends State<BottomNavbar> {
                 city: widget.city,
               );
             } else if (state.index == 1) {
-              return const WorkPage();
+              return const QRPage();
             } else if (state.index == 2) {
               return const AppsPage();
             } else if (state.index == 3) {

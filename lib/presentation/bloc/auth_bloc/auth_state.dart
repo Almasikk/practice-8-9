@@ -7,9 +7,8 @@ class InitialState extends AuthState {}
 class LoadingState extends AuthState {}
 
 class LoadedState extends AuthState {
-  final Map<String, dynamic> userData;
-
-  LoadedState({required this.userData});
+  final List<User> users;
+  LoadedState({required this.users});
 }
 
 class ErrorState extends AuthState {}
