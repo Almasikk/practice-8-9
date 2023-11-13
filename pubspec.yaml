@@ -19,6 +19,9 @@ dependencies:
   logger: any
   qr_code_scanner: ^1.0.1
   url_launcher: ^6.1.11
+  shared_preferences: ^2.2.2
+  firebase_core: ^2.22.0
+  firebase_messaging: ^14.7.4
 
 dev_dependencies:
   flutter_test:

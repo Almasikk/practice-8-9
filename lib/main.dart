@@ -1,13 +1,20 @@
 import 'package:dio/dio.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:practice9/data/api_client.dart';
 import 'package:practice9/data/auth_repository.dart';
+import 'package:practice9/data/firebase_api.dart';
+import 'package:practice9/firebase_options.dart';
 import 'package:practice9/presentation/bloc/auth_bloc/auth_bloc.dart';
 import 'package:practice9/presentation/bloc/navigation_bloc/navigation_bloc.dart';
 import 'package:practice9/presentation/screens/signin_screen.dart';
+import 'package:practice9/presentation/screens/splash_screen.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
+  await FirebaseApi().initNotifications();
   runApp(MainApp());
 }
 
@@ -35,9 +42,9 @@ class MainApp extends StatelessWidget {
           create: (_) => navigationBloc,
         ),
       ],
-      child: MaterialApp(
+      child: const MaterialApp(
         debugShowCheckedModeBanner: false,
-        home: SignInPage(),
+        home: SplashScreen(),
       ),
     );
   }

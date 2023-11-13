@@ -62,13 +62,7 @@ class _BottomNavbarState extends State<BottomNavbar> {
         builder: (context, state) {
           if (state is LoadedNavigationState) {
             if (state.index == 0) {
-              return HomePage(
-                id: widget.id,
-                name: widget.name,
-                street: widget.street,
-                suite: widget.suite,
-                city: widget.city,
-              );
+              return const HomePage();
             } else if (state.index == 1) {
               return const QRPage();
             } else if (state.index == 2) {
