@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:practice9/presentation/bloc/auth_bloc/auth_bloc.dart';
-import 'package:practice9/presentation/widgets/bottom_navbar.dart';
+import 'package:practice_nine/presentation/bloc/auth_bloc/auth_bloc.dart';
+import 'package:practice_nine/presentation/widgets/bottom_navbar.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class SignInPage extends StatelessWidget {

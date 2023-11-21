@@ -1,6 +1,6 @@
 import 'package:bloc/bloc.dart';
-import 'package:practice9/data/auth_repository.dart';
-import 'package:practice9/presentation/models/user.dart';
+import 'package:practice_nine/data/auth_repository.dart';
+import 'package:practice_nine/presentation/models/user.dart';
 
 part 'auth_event.dart';
 part 'auth_state.dart';

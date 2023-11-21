@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:practice9/presentation/bloc/navigation_bloc/navigation_bloc.dart';
-import 'package:practice9/presentation/screens/apps_screen.dart';
-import 'package:practice9/presentation/screens/home_screen.dart';
-import 'package:practice9/presentation/screens/profile_screen.dart';
-import 'package:practice9/presentation/screens/qr_screen.dart';
+import 'package:practice_nine/presentation/bloc/navigation_bloc/navigation_bloc.dart';
+import 'package:practice_nine/presentation/screens/apps_screen.dart';
+import 'package:practice_nine/presentation/screens/home_screen.dart';
+import 'package:practice_nine/presentation/screens/profile_screen.dart';
+import 'package:practice_nine/presentation/screens/qr_screen.dart';
 
 class BottomNavbar extends StatefulWidget {
   final int id;

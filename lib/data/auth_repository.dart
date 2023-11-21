@@ -1,6 +1,6 @@
 import 'package:dio/dio.dart';
-import 'package:practice9/data/api_client.dart';
-import 'package:practice9/presentation/models/user.dart';
+import 'package:practice_nine/data/api_client.dart';
+import 'package:practice_nine/presentation/models/user.dart';
 
 class AuthRepository {
   final Dio dio;

@@ -1,5 +1,5 @@
 import 'package:dio/dio.dart';
-import 'package:practice9/presentation/models/user.dart';
+import 'package:practice_nine/presentation/models/user.dart';
 import 'package:retrofit/retrofit.dart';
 
 part 'api_client.g.dart';
